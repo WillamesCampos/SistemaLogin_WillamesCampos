@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "projeto webbottle_willamescampos"
+name = "sistemalogin_willamescampos"
 version = "0.1.0"
 description = "Projeto de desenvolvimento de uma aplicaçao web com o microframework bottle do curso Programaçao Orientada a Objetos com Python 3"
 authors = ["Willames <williames@arbache.com>"]
@@ -9,6 +9,8 @@ python = "^3.9"
 bottle = "^0.12.19"
 SQLAlchemy = "^1.4.25"
 bottle-session = "^1.0"
+bcrypt = "^3.2.0"
+bottle-sqlalchemy = "^0.4.3"
 
 [tool.poetry.dev-dependencies]
 

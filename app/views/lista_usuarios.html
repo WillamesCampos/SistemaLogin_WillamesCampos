@@ -1,14 +1,12 @@
 % rebase('base.html', title='Lista de usuarios')
 
 <div class="panel-heading">
-	<h3 class="panel-title">Lista de usuários</h3>
+	<center>
+		<h3 class="panel-title">Lista de usuários</h3>
+	</center>
 </div>
 <ul class="list-group">
-	% if acesso:
-		% for usuario in usuarios:
+	% for usuario in usuarios:
 		<li class="list-group-item">{{ usuario.username }}</li>
-		% end
-	% else:
-	<center><p style="color:red"><strong>Acesso negado!</strong></p></center>
 	% end
 </ul>
