@@ -1,9 +1,10 @@
-bcrypt==3.1.2
-bottle==0.12.10
-bottle-session==0.6
-bottle-sqlalchemy==0.4.3
-cffi==1.9.1
-pycparser==2.17
-redis==2.10.5
-six==1.10.0
-SQLAlchemy==1.1.3
+bcrypt @ file:///home/willames/.cache/pypoetry/artifacts/e1/8f/44/0adcd01881468523abd64d2c6666d8e74ee78d8ef417abbd7cf7d04287/bcrypt-3.2.0-cp36-abi3-manylinux2010_x86_64.whl
+bottle @ file:///home/willames/.cache/pypoetry/artifacts/f7/f9/b9/cafa1cdf82774d21dc4591ca8d5bb8efa5cb3c3731d9e0d212872b292a/bottle-0.12.19-py3-none-any.whl
+bottle-session @ file:///home/willames/.cache/pypoetry/artifacts/2e/96/9f/49a0124c123aa20a78ec088e3897dd8dbdfaa599dcaed3b75d6d402e38/bottle_session-1.0-py3-none-any.whl
+bottle-sqlalchemy @ file:///home/willames/.cache/pypoetry/artifacts/c5/40/57/0850b517fcb54c92c4b38fc167a9be2ce2c1af7821ff2fafb893f6d5b2/bottle-sqlalchemy-0.4.3.tar.gz
+cffi @ file:///home/willames/.cache/pypoetry/artifacts/0b/b7/48/30ff76ec327f0041e809dd9c35b741a68d6d8566a123e6dabda722536a/cffi-1.15.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl
+greenlet @ file:///home/willames/.cache/pypoetry/artifacts/50/37/3a/8b9fdf0fe03f0f52d1bb7c3505cdec8e2b0d72b9fedf093b84332bf97c/greenlet-1.1.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+pycparser @ file:///home/willames/.cache/pypoetry/artifacts/37/8e/5a/0ea4f84bc7f11e0e3468110efa2c7783241ea7eaa63a92a751de06f78f/pycparser-2.20-py2.py3-none-any.whl
+redis @ file:///home/willames/.cache/pypoetry/artifacts/1f/cc/e8/a2e4249977cc5b36425bd02e5ab9e4d4a586000e8798342ffd415576fb/redis-3.5.3-py2.py3-none-any.whl
+six @ file:///home/willames/.cache/pypoetry/artifacts/08/9f/47/c16ae03035fc69eaf100ea39657a49baaeef714e25a52575710c34cd48/six-1.16.0-py2.py3-none-any.whl
+SQLAlchemy @ file:///home/willames/.cache/pypoetry/artifacts/ce/01/7d/cfe5c0de6e732b5a96e27e55df95c167df26006b462fae63e923237b53/SQLAlchemy-1.4.26-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl

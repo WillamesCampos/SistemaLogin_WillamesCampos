@@ -1,3 +1,4 @@
+import bottle_session
 from bottle import Bottle, TEMPLATE_PATH
 from bottle_sqlalchemy import SQLAlchemyPlugin
 from sqlalchemy import create_engine
@@ -17,7 +18,11 @@ plugin = SQLAlchemyPlugin(
     use_kwargs=False
 )
 
+plugin_session = bottle_session.SessionPlugin(
+    cookie_lifetime=120
+)
 app.install(plugin)
+app.install(plugin_session)
 
 
 from app.controllers import default

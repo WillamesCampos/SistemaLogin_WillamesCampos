@@ -64,7 +64,7 @@ def acao_cadastro(db):
 	# return template('cadastro', existe_username=True)
 
 @app.route('/', method='POST')
-def acao_login(db):
+def acao_login(db, session):
 	username = request.forms.get('username')
 	password = request.forms.get('password')
 
@@ -72,8 +72,9 @@ def acao_login(db):
 		(User.username == username) & (User.password == password)
 	).all()
 	if query:
+		session['name'] = username
 		return redirect('/usuarios')
-	return template('lista_usuarios', sucesso=False)
+	return template('login', sucesso=False)
 	# try:
 	# 	user = db.query(User).filter(User.username == username).one()
 	# 	existe_username = True
@@ -91,9 +92,10 @@ def acao_login(db):
 	return template('login', sucesso=False)
 
 @app.route('/usuarios')
-def usuarios(db):
+def usuarios(db, session):
+	acesso = True if session.get('name') else False
 	usuarios = db.query(User).all()
-	return template('lista_usuarios', usuarios=usuarios)
+	return template('lista_usuarios', usuarios=usuarios, acesso=acesso)
 	# if session.get('name'):
 	# 	acesso = True
 	# else:
