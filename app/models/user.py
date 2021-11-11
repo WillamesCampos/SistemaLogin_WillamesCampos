@@ -7,11 +7,13 @@ class User(Base):
 	__tablename__ = 'users'
 	id = Column(Integer, primary_key=True, autoincrement=True)
 	username = Column(String(50), nullable=False, unique=True)
-	password = Column(String(50), nullable=False)
+	hashed = Column(String(50), nullable=False)
+	salt = Column(String(50), nullable=False)
 
-	def __init__(self, username, password):
+	def __init__(self, username, hashed, salt):
 		self.username = username
-		self.password = password
+		self.hashed = hashed
+		self.salt = salt
 
 	def __repr__(self):
 		return f'<User> {self.username}'
